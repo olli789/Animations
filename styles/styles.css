@@ -3,7 +3,7 @@ display: flex;
 margin: auto;
 height: 1080px;
 width: 1920px;
-background-image: url(/images/background-image.jpg);
+background-image: url(../images/background-image.jpg);
 border-style: groove;
 border-color: red;
 justify-content: center;
