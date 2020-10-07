@@ -1,0 +1,61 @@
+.container {
+display: flex;
+margin: auto;
+height: 1080px;
+width: 1920px;
+background-image: url(/images/background-image.jpg);
+border-style: groove;
+border-color: red;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+
+
+.couple {width: 500px;
+height: 500px;
+border-style: groove;
+border-color: red;
+border-radius: 1000px;
+position: relative;
+animation: mymove 3s infinite;
+}
+
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 550px;}
+  }
+
+
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
